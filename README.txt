@@ -1,2 +1,2 @@
-	             Spotify DW Automation
+	             Spotify Discover Weekly Automation
 --------------------------------------------------------------------------------
