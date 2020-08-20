@@ -40,11 +40,18 @@ class SaveSongs:
 
         request_body = json.dumps({
             "name": todayFormatted + "discover weekly", "description": "Discover weekly rescued from the brick of destruction using Python", "public": True
-            })
+        })
 
+        response = requests.post(query, data=requests_body, headers={
+            "content-type":"application/json",
+            "Authorization": "Bearer {}".format(spotify_token)
+        })
+
+        response_json = response.json()
+        
 
 
 
 
 a = SaveSongs()
-a.find_songs()
+a.fcreate_playlist()
