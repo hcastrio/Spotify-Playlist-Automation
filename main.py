@@ -11,6 +11,17 @@ class SaveSongs:
         self.discover_weekly_id = discover_weekly_id
         self.tracks = ""
         self.new_playlist_id = ""
+
+    def call_refresh(self):
+
+        print("Refreshing token...")
+
+        refreshCaller = Refresh()
+
+        self.spotify_token = refreshCaller.refresh()
+
+        self.find_songs()
+
     def find_songs(self):
 
         print("Finding songs in discover weekly...")
@@ -24,13 +35,25 @@ class SaveSongs:
 
         response_json = response.json()
 
-        print(response)
-
         for i in response_json["items"]:
             self.tracks += (i["track"]["uri"] + ",")
         self.tracks = self.tracks[:-1]
 
         self.add_to_playlist()
+
+    def add_to_playlist(self):
+
+        print("Adding songs...")
+
+        self.new_playlist_id = self.create_playlist()
+
+        query = "https://api.spotify.com/v1/playlists/{}/tracks?uris={}".format(
+            self.new_playlist_id, self.tracks)
+
+        response = requests.post(query, headers={
+            "content-type":"application/json",
+            "Authorization": "Bearer {}".format(self.spotify_token)
+        })
 
     def create_playlist(self):
 
@@ -54,33 +77,7 @@ class SaveSongs:
 
         response_json = response.json()
 
-        return response_json["id"]
-        
-    def add_to_playlist(self):
-
-        print("Adding songs...")
-
-        self.new_playlist_id = self.create_playlist()
-
-        query = "https://api.spotify.com/v1/playlists/{}/tracks?uris={}".format(
-            self.new_playlist_id, self.tracks)
-
-        response = requests.post(query, headers={
-            "content-type":"application/json",
-            "Authorization": "Bearer {}".format(self.spotify_token)
-        })
-
-    def call_refresh(self):
-
-        print("Refreshing token...")
-
-        refreshCaller = Refresh()
-
-        self.spotify_token = refreshCaller.refresh()
-
-        self.find_songs()
-
-
+        return response_json["id"]       
 
 a = SaveSongs()
 a.call_refresh()
