@@ -36,7 +36,7 @@ Description:
            10. Now under Program/script we need to find the directory of python
                 	 - Go to powershell
                          - Enter: import sys
-                                      sys.executable
+                                   sys.executable
                          - That will print out the directory so copy it
            11. Paste the directory under "Program/script"
            12. In "Add arguments" type "main.py"
