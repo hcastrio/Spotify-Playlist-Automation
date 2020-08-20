@@ -13,8 +13,7 @@ Description:
 
 	    	                 Program functionality
             --------------------------------------------------------------------
-            This program will go into Spoifiy's Discover Weekly
-            playlist, save all the songs and will automatically
+            This program will go into Spoifiy's Discover Weekly playlist, save all the songs and will automatically
             create a new playlist with those songs of that week. 
             Spotify's Discover Weekly playlist changes every 
             week so this program will run every Monday and it
