@@ -22,7 +22,7 @@ Description:
             the songs of that week and will have the date the playlist was 
             created as the title.
 
-    	                                  Program functionality
+    	                   Program functionality
             --------------------------------------------------------------------
 	     		
 
