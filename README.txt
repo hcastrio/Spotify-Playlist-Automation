@@ -6,7 +6,7 @@ Description:
 	    but you forgot to save it for later?
 
 	    This is the problem I also faced so I decided to fix my problem 
-                      using my Python knowledge.
+       using my Python knowledge.
 
 	    I decided to use Spotify's very own Web API which can be found
 	    here (https://developer.spotify.com/documentation/web-api/).
