@@ -1,0 +1,2 @@
+spotify_token = "BQAgfyoWq20Ut9_fkNZlefyj0LLUyxgM4NNxppM6pz4AY83nDMKzHsWHRLcRXWj_wjf4oLGpHRHUXJ85PaL69XhVHyJLatqFYmYKuAfN71tbK1upRUbrrYlb3GdTTBZ7pcinY3OEMbN2StUqhpnXy6Ci8iR5j8IRNHbS-UpuE_gve6Rano52A0bvze1Tpva_0X5-0uJbVpSJM58"
+spotify_user_id = "1267629455"
