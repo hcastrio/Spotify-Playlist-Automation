@@ -12,7 +12,7 @@ Description:
 	    here (https://developer.spotify.com/documentation/web-api/).
 
 	    	                 Program functionality
-            --------------------------------------------------------------------------------
+            --------------------------------------------------------------------
 	     		
 
 		
