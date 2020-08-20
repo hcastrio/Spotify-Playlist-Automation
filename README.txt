@@ -41,7 +41,7 @@ Description:
            11. Paste the directory under "Program/script"
            12. In "Add arguments" type "main.py"
            13. In "Start in" You want to type in the directory where the main.py 
-                file is stored
+               file is stored
            14. Then press OK and you're all set it will run every week
           
             
