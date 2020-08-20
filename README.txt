@@ -34,13 +34,14 @@ Description:
             8. Press New
             9. Next to Action change it to "Start a program"
           10. Now under Program/script we need to find the directory of python
-                	       - Go to powershell
+                	    - Go to powershell
                          - Enter: import sys
                                       sys.executable
                          - That will print out the directory so copy it
           11. Paste the directory under "Program/script"
           12. In "Add arguments" type "main.py"
-          13. In "Start in" You want to type in the directory where the main.py file is stored
+          13. In "Start in" You want to type in the directory where the main.py 
+                file is stored
           14. Then press OK and you're all set it will run every week
           
             
