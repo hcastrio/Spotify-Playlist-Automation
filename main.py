@@ -44,7 +44,7 @@ class SaveSongs:
             spotify_user_id)   
 
         request_body = json.dumps({
-            "name": todayFormatted + "discover weekly", "description": "Discover weekly rescued from the brick of destruction using Python", "public": True
+            "name": todayFormatted + " Discover Weekly", "description": "Discover weekly rescued from the brick of destruction using Python", "public": True
         })
 
         response = requests.post(query, data=request_body, headers={
