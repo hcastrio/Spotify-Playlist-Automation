@@ -9,7 +9,7 @@ class SaveSongs:
         self.spotify_token = spotify_token
         self.discover_weekly_id = discover_weekly_id
         self.tracks = ""
-
+        self.new_playlist_id = ""
     def find_songs(self):
 
         print("Finding songs in discover weekly...")
@@ -29,7 +29,11 @@ class SaveSongs:
             self.tracks += (i["track"]["uri"] + ",")
         self.tracks = self.tracks[:-1]
 
+        self.add_to_playlist()
+
     def create_playlist(self):
+
+        print("Trying to create playlist...")
 
         today = date.today()
 
@@ -48,10 +52,30 @@ class SaveSongs:
         })
 
         response_json = response.json()
+
+        return response_json["id"]
         
+    def add_to_playlist(self):
+
+        print("Adding songs...")
+
+        self.new_playlist_id = self.create_playlist()
+
+        query = "https://api.spotify.com/v1/playlists/{}/tracks?uris={}".format(
+            self.new_playlist_id, self.tracks)
+
+        response = requests.post(query, headers={
+            "content-type":"application/json",
+            "Authorization": "Bearer {}".format(spotify_token)
+        })
+
+
+
+
+
 
 
 
 
 a = SaveSongs()
-a.fcreate_playlist()
+a.find_songs()
