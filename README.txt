@@ -14,8 +14,8 @@ Description:
 	    	                 Program functionality
             --------------------------------------------------------------------
             This program will go into Spoifiy's Discover Weekly playlist, pull 
-            all the songs and will automatically create a new playlist with those songs of that week. 
-            Spotify's Discover Weekly playlist changes every 
+            all the songs and will automatically create a new playlist with 
+            those songs of that week. Spotify's Discover Weekly playlist changes every 
             week so this program will run every Monday and it
             will create a new playlist with the songs of that week
             and will have the date the playlist was created as the 
