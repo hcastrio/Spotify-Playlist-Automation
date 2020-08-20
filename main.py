@@ -7,7 +7,7 @@ from refresh import Refresh
 class SaveSongs:
     def __init__(self):
         self.user_id = spotify_user_id
-        self.spotify_token = "spotify_token"
+        self.spotify_token = ""
         self.discover_weekly_id = discover_weekly_id
         self.tracks = ""
         self.new_playlist_id = ""
