@@ -1,4 +1,4 @@
-import requests
+# Authorization Code Flow
 spotify_user_id = "1267629455"
 discover_weekly_id = "37i9dQZEVXcIN4SLeu83LI"
 refresh_token = "AQB81Mil6ujda-fJJ9YoW442mFsPr3tRUQjunZX-I8c2MSV3mbDqO5Kw-BRflfb30XopUn6HiNlOg2iYeM9J4PZ_HK2aPvSbNuDMDtKDPp8zHw7WPDjOsANkvPTYW9aaseg"
