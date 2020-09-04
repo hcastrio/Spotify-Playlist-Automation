@@ -1,5 +1,0 @@
-import requests
-spotify_user_id = "1267629455"
-discover_weekly_id = "37i9dQZEVXcIN4SLeu83LI"
-refresh_token = "AQB81Mil6ujda-fJJ9YoW442mFsPr3tRUQjunZX-I8c2MSV3mbDqO5Kw-BRflfb30XopUn6HiNlOg2iYeM9J4PZ_HK2aPvSbNuDMDtKDPp8zHw7WPDjOsANkvPTYW9aaseg"
-base_64 = "MDM2MWRlMzcxNDM5NDI2OTg0OTA0YmE0NGRjZmYyMjI6ZjIyMTJlZmUzYzU4NDcyM2FlNTQ2OWEwZjk0Y2M4YzI="
