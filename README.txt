@@ -11,14 +11,14 @@ This is the problem I also faced so I decided to fix my problem using my Python 
 I decided to use Spotify's very own Web API which can be found here (https://developer.spotify.com/documentation/web-api/).
 
 	                Program Functionality
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
     	                 
 This program will go into Spoifiy's Discover Weekly playlist, pull all the songs and will automatically create a new playlist with those songs of that week. 
  
 Spotify's Discover Weekly playlist changes every week so this program will run every Monday and it will create a new playlist with the songs of that week and will have the date the playlist was created as the title.
 
     	        How to make it run every Monday
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 1. Go to your Task Scheduler
 2. Create a Task
